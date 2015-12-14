@@ -63,7 +63,11 @@
 				97DA86EE1C1F33CF0046BCC7 /* FoodTrackerTests */,
 				97DA86D81C1F33CE0046BCC7 /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
+			wrapsLines = 1;
 		};
 		97DA86D81C1F33CE0046BCC7 /* Products */ = {
 			isa = PBXGroup;
