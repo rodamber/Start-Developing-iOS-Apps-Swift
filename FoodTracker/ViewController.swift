@@ -8,6 +8,7 @@ class ViewController:   UIViewController,
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var mealNameLabel: UILabel!
     @IBOutlet weak var photoImageView: UIImageView!
+    @IBOutlet weak var ratingControl: RatingControl!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,7 @@ class ViewController:   UIViewController,
         mealNameLabel.text = textField.text
     }
     
-    // MARK: UIImagePickeControllerDelegate
+    // MARK: UIImagePickerControllerDelegate
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
         // Dismiss the picker if the user cancelled.
         dismissViewControllerAnimated(true, completion: nil)
@@ -59,11 +60,6 @@ class ViewController:   UIViewController,
         
         presentViewController(imagePickerController, animated: true, completion: nil)
     }
-    
-    @IBAction func setDefaultLabelText(sender: UIButton) {
-        mealNameLabel.text = "Meal Name"
-    }
-    
 
 }
 
